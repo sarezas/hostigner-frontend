@@ -1,0 +1,99 @@
+$margin: 20px;
+
+$mobile-s: 320px;
+$galaxy-s5: 360px;
+$mobile-m: 375px;
+$mobile-l: 420px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop: 1440px;
+
+@mixin mobile-s {
+    @media (max-width: #{$mobile-s}) {
+        @content;
+    }
+}
+
+@mixin galaxy-s5 {
+    @media (max-width: #{$galaxy-s5}) {
+        @content;
+    }
+}
+
+@mixin mobile-m {
+    @media (max-width: #{$mobile-m}) {
+        @content;
+    }
+}
+
+@mixin mobile-l {
+    @media (max-width: #{$mobile-l}) {
+        @content;
+    }
+}  
+
+@mixin tablet {
+    @media (max-width: #{$tablet}) {
+        @content;
+    }
+} 
+
+@mixin laptop {
+    @media (max-width: #{$laptop}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (max-width: #{$desktop}) {
+        @content;
+    }
+}
+
+#app-wrapper {
+    background-image: url('../assets/background-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    position: fixed;
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    text-align: left;
+
+    #header-menu__wrapper {
+        margin: $margin;
+
+        #header-menu__list {
+            align-items: flex-end;
+
+            #header-menu__item {
+                color: hsl(0, 0%, 100%);
+                background-color: transparent;
+                font-size: 14px;
+                text-transform: uppercase;
+                border: none !important;
+    
+                #header-menu__sale-notice {
+                    color: hsl(44, 93%, 47%);
+                    font-size: 10px;
+                    text-transform: uppercase;
+                    margin: 0 0;
+                    padding: 0 0;
+                }
+            }
+        }
+    }
+
+    #main-wrapper {
+        height: 80px;
+    }
+
+    #footer-wrapper {
+        height: 10%;
+    }
+}

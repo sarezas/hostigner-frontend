@@ -1,4 +1,4 @@
-$margin: 20px;
+$margin: 10px;
 
 $mobile-s: 320px;
 $galaxy-s5: 360px;
@@ -9,48 +9,48 @@ $laptop: 1024px;
 $desktop: 1440px;
 
 @mixin mobile-s {
-    @media (max-width: #{$mobile-s}) {
+    @media (min-width: #{$mobile-s}) {
         @content;
     }
 }
 
 @mixin galaxy-s5 {
-    @media (max-width: #{$galaxy-s5}) {
+    @media (min-width: #{$galaxy-s5}) {
         @content;
     }
 }
 
 @mixin mobile-m {
-    @media (max-width: #{$mobile-m}) {
+    @media (min-width: #{$mobile-m}) {
         @content;
     }
 }
 
 @mixin mobile-l {
-    @media (max-width: #{$mobile-l}) {
+    @media (min-width: #{$mobile-l}) {
         @content;
     }
 }  
 
 @mixin tablet {
-    @media (max-width: #{$tablet}) {
+    @media (min-width: #{$tablet}) {
         @content;
     }
 } 
 
 @mixin laptop {
-    @media (max-width: #{$laptop}) {
+    @media (min-width: #{$laptop}) {
         @content;
     }
 }
 
 @mixin desktop {
-    @media (max-width: #{$desktop}) {
+    @media (min-width: #{$desktop}) {
         @content;
     }
 }
 
-#app-wrapper {
+#background-wrapper {
     background-image: url('../assets/background-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -60,40 +60,134 @@ $desktop: 1440px;
     height: auto;
     position: fixed;
     color: hsl(0, 0%, 100%);
-    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
-    line-height: 21px;
-    text-align: left;
 
-    #header-menu__wrapper {
-        margin: $margin;
-
-        #header-menu__list {
-            align-items: flex-end;
-
-            #header-menu__item {
-                color: hsl(0, 0%, 100%);
-                background-color: transparent;
-                font-size: 14px;
-                text-transform: uppercase;
-                border: none !important;
-    
-                #header-menu__sale-notice {
-                    color: hsl(44, 93%, 47%);
-                    font-size: 10px;
-                    text-transform: uppercase;
-                    margin: 0 0;
-                    padding: 0 0;
+    #content-wrapper {
+        #header-wrapper {
+            #nav-wrapper {
+                .navbar-brand {
+                    #hostinger-logo {
+                        max-width: 140px;
+                        max-height: 28px;
+                        transition: 150ms ease-in;
+                      
+                        &:hover {
+                            transform: scale(1.05);
+                            transition: 150ms ease-out;
+                        }
+                    }
                 }
+                
+                #navbar-menu__wrapper {
+                    #navbar-menu__list {
+                        #navbar-menu__item {
+                            background-color: transparent;
+                            border: none !important;
+                            color: hsl(0, 0%, 100%);
+
+                            a {
+                                font-size: 14px;
+                                text-transform: uppercase;
+                                margin-top: 0;
+                                text-decoration: none;
+                                color: hsl(0, 0%, 100%);
+                                transition: 200ms ease-in;
+
+                                &:hover {
+                                    color: hsl(0, 6%, 81%);
+                                    transition: 200ms ease-out;
+
+                                    #navbar-menu__sale-notice {
+                                        margin-left: 5px;
+                                        transform: scale(1.1);
+                                        transition: 200ms ease-out;
+                                    }
+                                }
+
+                                #navbar-menu__sale-notice {
+                                    color: hsl(59, 100%, 45%);
+                                    font-size: 10px;
+                                    text-transform: uppercase;
+                                    margin: 0 0;
+                                    padding: 0 0;
+                                    transition: 200ms ease-in;
+                                }
+                            }
+                        }
+                    }
+                }
+                
             }
         }
-    }
-
-    #main-wrapper {
-        height: 80px;
-    }
-
-    #footer-wrapper {
-        height: 10%;
+        // #main-wrapper {}
+        // #footer-wrapper {}
     }
 }
+
+
+// ---- old start ---- 
+// #app-wrapper {
+//     background-image: url('../assets/background-min.jpg');
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     background-position: 50% 50%;
+//     min-width: 100%;
+//     min-height: 100%;
+//     height: auto;
+//     position: fixed;
+//     color: hsl(0, 0%, 100%);
+//     font-family: 'Open Sans', sans-serif;
+//     // text-align: left;
+//     // line-height: 21px;
+
+//     @include laptop {
+//         color: red;
+//     }
+
+//     #header-menu__wrapper {
+//         font-size: 14px;
+//         font-weight: 600;
+
+//         #header-navbar {
+//             #header-menu {
+//                 #header-menu__logo {
+//                     #hostinger-logo {
+//                         max-width: 140px;
+//                         max-height: 28px;
+//                     }
+//                 }
+    
+//                 #header-menu__list {
+//                     align-items: center;
+    
+//                     #header-menu__item {
+//                         // display: block;
+//                         color: hsl(0, 0%, 100%);
+//                         background-color: transparent;
+//                         font-size: 14px;
+//                         text-transform: uppercase;
+//                         border: none !important;
+//                         margin-top: 0;
+            
+//                         #header-menu__sale-notice {
+//                             color: hsl(59, 100%, 45%);
+//                             font-size: 10px;
+//                             text-transform: uppercase;
+//                             margin: 0 0;
+//                             padding: 0 0;
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// 
+    // #main-wrapper {
+    //     height: 80px;
+    // }
+// 
+    // #footer-wrapper {
+    //     height: 10%;
+    // }
+// }

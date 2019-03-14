@@ -1,4 +1,4 @@
-#app-wrapper {
+#background-wrapper {
   background-image: url("../assets/background-min.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,43 +8,61 @@
   height: auto;
   position: fixed;
   color: white;
-  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 600;
-  line-height: 21px;
-  text-align: left;
 }
 
-#app-wrapper #header-menu__wrapper {
-  margin: 20px;
+#background-wrapper #content-wrapper #header-wrapper #nav-wrapper .navbar-brand #hostinger-logo {
+  max-width: 140px;
+  max-height: 28px;
+  -webkit-transition: 150ms ease-in;
+  transition: 150ms ease-in;
 }
 
-#app-wrapper #header-menu__wrapper #header-menu__list {
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+#background-wrapper #content-wrapper #header-wrapper #nav-wrapper .navbar-brand #hostinger-logo:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 150ms ease-out;
+  transition: 150ms ease-out;
 }
 
-#app-wrapper #header-menu__wrapper #header-menu__list #header-menu__item {
-  color: white;
+#background-wrapper #content-wrapper #header-wrapper #nav-wrapper #navbar-menu__wrapper #navbar-menu__list #navbar-menu__item {
   background-color: transparent;
+  border: none !important;
+  color: white;
+}
+
+#background-wrapper #content-wrapper #header-wrapper #nav-wrapper #navbar-menu__wrapper #navbar-menu__list #navbar-menu__item a {
   font-size: 14px;
   text-transform: uppercase;
-  border: none !important;
+  margin-top: 0;
+  text-decoration: none;
+  color: white;
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
 }
 
-#app-wrapper #header-menu__wrapper #header-menu__list #header-menu__item #header-menu__sale-notice {
-  color: #e7ac08;
+#background-wrapper #content-wrapper #header-wrapper #nav-wrapper #navbar-menu__wrapper #navbar-menu__list #navbar-menu__item a:hover {
+  color: #d1cccc;
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+#background-wrapper #content-wrapper #header-wrapper #nav-wrapper #navbar-menu__wrapper #navbar-menu__list #navbar-menu__item a:hover #navbar-menu__sale-notice {
+  margin-left: 5px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 200ms ease-out;
+  transition: 200ms ease-out;
+}
+
+#background-wrapper #content-wrapper #header-wrapper #nav-wrapper #navbar-menu__wrapper #navbar-menu__list #navbar-menu__item a #navbar-menu__sale-notice {
+  color: #e6e200;
   font-size: 10px;
   text-transform: uppercase;
   margin: 0 0;
   padding: 0 0;
-}
-
-#app-wrapper #main-wrapper {
-  height: 80px;
-}
-
-#app-wrapper #footer-wrapper {
-  height: 10%;
+  -webkit-transition: 200ms ease-in;
+  transition: 200ms ease-in;
 }
 /*# sourceMappingURL=app.component.css.map */

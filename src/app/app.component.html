@@ -1,25 +1,82 @@
-<div class="container-fluid" id="app-wrapper">
-  <div class="container" id="layout-wrapper">
-    <div class="container" id="header-menu__wrapper">
-      <div class="row">
-        <div class="col-2" id="header-menu__logo">
-          <img class="img-fluid" src="../assets/logo.png" alt="hostinger-logo">
+<div class="container-fluid" id="background-wrapper">
+  <div class="container" id="content-wrapper">
+    <div class="row" id="header-wrapper">
+      <nav class="col-12 d-flex justify-content-around mt-0 navbar navbar-expand-md" id="nav-wrapper">
+        <div class="col-3 mt-3 mr-4">
+          <a href="#" class="navbar-brand">
+            <img class="img-fluid" id="hostinger-logo" src="../assets/logo.png" alt="hostinger-logo">
+          </a>
         </div>
-        <div class="col-10" id="header-menu__wrapper">
-          <ul class="list-group list-group-horizontal" id="header-menu__list">
-              <li class="list-group-item" id="header-menu__item">web hosting</li>
-              <li class="list-group-item" id="header-menu__item">
-                <p id="header-menu__sale-notice">on sale</p>
-                cloud hosting
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="col-9 ml-5" id="navbar-menu">  
+          <div class="collapse navbar-collapse d-flex justify-content-start" id="navbar-menu__wrapper">
+            <ul class="list-group list-group-horizontal d-flex justify-content-end align-items-end" id="navbar-menu__list">
+              <li class="list-group-item" id="navbar-menu__item">
+                <a href="#">web hosting</a>
               </li>
-              <li class="list-group-item" id="header-menu__item">vps hosting</li>
-              <li class="list-group-item" id="header-menu__item">domain checker</li>
-              <li class="list-group-item" id="header-menu__item">webstie builder</li>
-          </ul>
+              <li class="list-group-item" id="navbar-menu__item">
+                <a href="#">
+                  <p id="navbar-menu__sale-notice"><strong>on sale</strong></p>
+                  cloud hosting
+                </a>  
+              </li>
+              <li class="list-group-item" id="navbar-menu__item">
+                <a href="#">vps hosting</a>
+              </li>
+              <li class="list-group-item" id="navbar-menu__item">
+                <a href="#">domain checker</a>
+              </li>
+              <li class="list-group-item" id="navbar-menu__item">
+                <a href="#">website builder</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
+      </nav>
     </div>
-    <div class="row" id="main-wrapper">main</div>
-    <div class="row" id="footer-wrapper">footer</div>
+    <div class="container" id="main-wrapper"></div>
+    <div class="container" id="footer-wrapper"></div>
   </div>
 </div>
+<!-- ---- old start ---- -->
+<!-- <div class="container-fluid" id="app-wrapper">
+    <div class="container" id="layout-wrapper">
+      <div class="container-fluid mx-auto" id="header-menu__wrapper">
+        <nav class="navbar navbar-expand-md">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-navbar"
+            aria-controls="header-navbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="container collapse navbar-collapse mx-auto" id="header-navbar">
+            <div class="row d-flex justify-content-between align-items-baseline mt-0 mx-auto"
+              id="header-menu">
+              <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2 d-flex justify-content-start align-items-baseline"
+                id="header-menu__logo">
+                <div class="col-6">
+                  <img class="img-fluid" id="hostinger-logo" src="../assets/logo.png" alt="hostinger-logo">
+                </div>
+              </div>
+              <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 d-flex justify-content-end align-items-baseline"
+                id="header-menu__wrapper">
+                <ul class="list-group list-group-horizontal" id="header-menu__list">
+                  <li class="list-group-item" id="header-menu__item">web hosting</li>
+                  <li class="list-group-item" id="header-menu__item">
+                    <p id="header-menu__sale-notice"><strong>on sale</strong></p>
+                    cloud hosting
+                  </li>
+                  <li class="list-group-item" id="header-menu__item">vps hosting</li>
+                  <li class="list-group-item" id="header-menu__item">domain checker</li>
+                  <li class="list-group-item" id="header-menu__item">website builder</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="row" id="main-wrapper"></div>
+      <div class="row" id="footer-wrapper"></div>
+    </div>
+  </div> -->

@@ -1,2 +1,54 @@
-<div class="container" id="main-wrapper"></div>
+<div class="container mx-auto" id="main-wrapper">
+    <div class="row d-flex justify-content-end" id="discount-wrapper">
+        <div class="col-4" id="discount-tag">save 82%</div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="container d-flex flex-column" id="offer-wrapper">
+                <div class="row" id="offer_title">
+                    <div class="col-12">
+                        new year's offer
+                    </div>
+                </div>
+                <div class="row" id="offer_discount">
+                    <div class="col-12">
+                        <span id="red-text">82% OFF</span> web hosting
+                    </div>
+                </div>
+                <div class="row" id="offer_countdown">
+                    <div class="col-12">
+                        <div class="row d-flex justify-content-start align-items-center">
+                            <div class="col-1">
+                                <div id="triangle-right"></div>
+                            </div>
+                            <div class="col-9 mx-auto" id="time-block">
+                                <div class="row d-flex justify-content-center align-items-center mx-auto" id="time-block__time">
+                                    <count-down [text]="text" units="Days | Hours | Minutes | Seconds" end="March 22, 2019"></count-down>
+                                </div>
+                            </div>
+                            <div class="col-1">
+                                <div id="triangle-left"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="offer offer_button">
+                    <div class="col-12">
+                        <button class="btn btn-danger">get started now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="container d-flex flex-row" id="price-wrapper">
+                <div class="col-4" id="price price_currency">$</div>
+                <div class="col-4" id="price price_unit__big">1</div>
+                <div class="col-4" id="price price_unit__small">
+                    <div class="row" id="price_unit__cents">45</div>
+                    <div class="row" id="price_unit__month">/mo</div>    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 

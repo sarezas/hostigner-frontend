@@ -169,6 +169,7 @@ $desktop: 1440px;
                 @include mobile-l {
                     display: flex;
                     flex-direction: column;
+                    // text-align: left;
                 }
             }
         }

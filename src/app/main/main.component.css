@@ -1,0 +1,42 @@
+#main-wrapper {
+  margin-top: 15%;
+  margin-bottom: 15%;
+  text-transform: capitalize;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#main-wrapper #offer-wrapper {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#main-wrapper #offer-wrapper #red-text {
+  color: #dc3848;
+}
+
+#main-wrapper #offer-wrapper #triangle-right {
+  width: 15px;
+  height: 15px;
+  border-top: 10px solid transparent;
+  border-left: 20px solid #dc3848;
+  border-bottom: 10px solid transparent;
+}
+
+#main-wrapper #offer-wrapper #triangle-left {
+  width: 15px;
+  height: 15px;
+  border-top: 10px solid transparent;
+  border-right: 20px solid #dc3848;
+  border-bottom: 10px solid transparent;
+}
+
+#main-wrapper #offer-wrapper #time-block__time {
+  max-width: 280px;
+  height: auto;
+}
+
+#main-wrapper #offer-wrapper count-down {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+/*# sourceMappingURL=main.component.css.map */

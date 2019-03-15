@@ -64,3 +64,50 @@ $desktop: 1440px;
         @content;
     }
 }
+
+#main-wrapper {
+    margin-top: 15%;
+    margin-bottom: 15%;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    // line-height: 21px;
+    // font-size: 14px;
+
+    #offer-wrapper {
+        font-size: 30px;
+        font-weight: 600;
+
+        #red-text {
+            color: hsl(354, 70%, 54%);
+        }
+
+        #triangle-right {
+            width: 15px;
+            height: 15px;
+            border-top: 10px solid transparent;
+            border-left: 20px solid hsl(354, 70%, 54%);
+            border-bottom: 10px solid transparent;
+        }
+    
+        #triangle-left {
+            width: 15px;
+            height: 15px;
+            border-top: 10px solid transparent;
+            border-right: 20px solid hsl(354, 70%, 54%);
+            border-bottom: 10px solid transparent;
+        }
+
+        #time-block__time {
+            max-width: 280px;
+            height: auto;
+        }
+
+        count-down {
+            // margin: 20px;
+            // padding: 2.5px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+    
+    }
+}

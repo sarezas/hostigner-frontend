@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { MainComponent } from './main/main.component';
 import { FooterComponent } from './footer/footer.component';
+import { CountDownComponent } from '../../node_modules/angular2-simple-countdown/countdown';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     MainComponent,
-    FooterComponent
+    FooterComponent,
+    CountDownComponent
   ],
   imports: [
     BrowserModule
@@ -19,4 +21,4 @@ import { FooterComponent } from './footer/footer.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

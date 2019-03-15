@@ -3,6 +3,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "allowSyntheticDefaultImports": true,
     "sourceMap": true,
     "declaration": false,
     "module": "es2015",
@@ -17,6 +18,7 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": { "@angular/": ["node_modules/@angular/"] }
   }
 }

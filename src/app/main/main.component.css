@@ -5,6 +5,27 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+#main-wrapper #discount-tag {
+  height: 45px;
+  position: relative;
+  background: #eb6b78;
+}
+
+#main-wrapper #discount-tag:after {
+  top: 100%;
+  left: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(136, 183, 213, 0);
+  border-top-color: #eb6b78;
+  border-width: 20px;
+  margin-left: -20px;
+}
+
 #main-wrapper #offer-wrapper {
   font-size: 30px;
   font-weight: 600;
@@ -12,6 +33,12 @@
 
 #main-wrapper #offer-wrapper #red-text {
   color: #dc3848;
+}
+
+#main-wrapper #offer-wrapper #offer_button {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 40px;
 }
 
 #main-wrapper #offer-wrapper #triangle-right {
@@ -38,5 +65,24 @@
 #main-wrapper #offer-wrapper count-down {
   font-size: 12px;
   text-transform: uppercase;
+}
+
+#main-wrapper #price_wrapper #price_currency {
+  font-size: 150px;
+  height: auto;
+}
+
+#main-wrapper #price_wrapper #price_unit__big {
+  font-size: 320px;
+  height: auto;
+}
+
+#main-wrapper #price_wrapper #price_unit__small {
+  font-size: 150px;
+  height: auto;
+}
+
+#main-wrapper #price_wrapper #price_unit__month {
+  text-transform: none;
 }
 /*# sourceMappingURL=main.component.css.map */

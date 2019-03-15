@@ -73,12 +73,40 @@ $desktop: 1440px;
     // line-height: 21px;
     // font-size: 14px;
 
+    #discount-tag {
+        height: 45px;
+        position: relative;
+        background: hsl(354, 76%, 67%);
+    }
+    #discount-tag:after {
+        top: 100%;
+        left: 50%;
+        border: solid transparent;
+        content: " ";
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(136, 183, 213, 0);
+        border-top-color: hsl(354, 76%, 67%);
+        border-width: 20px;
+        margin-left: -20px;
+    }
+    
+
+
     #offer-wrapper {
         font-size: 30px;
         font-weight: 600;
 
         #red-text {
             color: hsl(354, 70%, 54%);
+        }
+
+        #offer_button {
+            font-weight: 600;
+            text-transform: uppercase;
+            padding: $padding 4 * $padding;
         }
 
         #triangle-right {
@@ -109,5 +137,26 @@ $desktop: 1440px;
             text-transform: uppercase;
         }
     
+    }
+
+    #price_wrapper {
+        #price_currency {
+            font-size: 150px;
+            height: auto;
+        }
+
+        #price_unit__big {
+            font-size: 320px;
+            height: auto;
+        }
+
+        #price_unit__small {
+            font-size: 150px;
+            height: auto;
+        }
+
+        #price_unit__month {
+            text-transform: none;
+        }
     }
 }

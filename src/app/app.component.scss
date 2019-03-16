@@ -1,8 +1,8 @@
 #background-wrapper {
-    background-image: url('../assets/background-min-2.jpg');
+    background: url('../assets/background-2-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 20% 80%;
+    background-position: 50% 50%;
     min-width: 100%;
     min-height: 100%;
     height: auto;
@@ -12,6 +12,5 @@
         color: hsl(0, 0%, 100%);
         font-family: 'Open Sans', sans-serif;
         font-weight: 600;
-        // line-height: 21px;
     }
 }

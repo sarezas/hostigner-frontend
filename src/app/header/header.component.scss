@@ -93,7 +93,6 @@ $desktop: 1440px;
                 margin-top: 0;
                 margin-left: 2 * $margin;
                 margin-bottom: 2 * $margin;
-                // padding: .25rem .75rem;
             }
         }
         
@@ -169,7 +168,6 @@ $desktop: 1440px;
                 @include mobile-l {
                     display: flex;
                     flex-direction: column;
-                    // text-align: left;
                 }
             }
         }

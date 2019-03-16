@@ -126,21 +126,21 @@
   text-transform: uppercase;
 }
 
-#main-wrapper #price_wrapper #price_currency {
+#main-wrapper #price_wrapper #price-currency {
   font-size: 80px;
   height: auto;
 }
 
-#main-wrapper #price_wrapper #price_unit__big-wrapper #price_unit__big {
+#main-wrapper #price_wrapper #price-unit__big-wrapper #price-unit__big {
   font-size: 300px;
 }
 
-#main-wrapper #price_wrapper #price_unit__small {
+#main-wrapper #price_wrapper #price-unit__small {
   font-size: 80px;
   height: auto;
 }
 
-#main-wrapper #price_wrapper #price_unit__month {
+#main-wrapper #price_wrapper #price-unit__month {
   text-transform: none;
 }
 /*# sourceMappingURL=main.component.css.map */

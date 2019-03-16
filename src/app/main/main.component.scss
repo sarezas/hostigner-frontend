@@ -173,25 +173,25 @@ $desktop: 1440px;
     }
 
     #price_wrapper {
-        #price_currency {
+        #price-currency {
             font-size: 80px;
             height: auto;
         }
 
-        #price_unit__big-wrapper {
+        #price-unit__big-wrapper {
             // justify-content: start;
 
-            #price_unit__big {
+            #price-unit__big {
                 font-size: 300px;
             }
         }
 
-        #price_unit__small {
+        #price-unit__small {
             font-size: 80px;
             height: auto;
         }
 
-        #price_unit__month {
+        #price-unit__month {
             text-transform: none;
         }
     }

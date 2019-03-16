@@ -64,3 +64,36 @@ $desktop: 1440px;
         @content;
     }
 }
+
+#footer-wrapper {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 120px;
+
+    .text-wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: capitalize;
+    
+        #checkmark {
+            display: inline-block;
+            margin-right: 10px;
+            
+            &:after{
+              content: '';
+              display: block;
+              width: 6px;
+              height: 12px;
+              border: solid rgb(63, 190, 38);
+              border-width: 0 3px 3px 0;
+              transform: rotate(45deg);
+            }
+          }
+    }
+    
+}

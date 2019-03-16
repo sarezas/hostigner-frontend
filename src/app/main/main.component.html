@@ -1,30 +1,31 @@
-<div class="container mx-auto" id="main-wrapper">
-    <div class="row d-flex justify-content-end" id="discount-wrapper">
-        <div class="col-2" id="discount-tag">save 82%</div>
+<div class="container" id="main-wrapper">
+    <div class="row" id="discount-wrapper">
+        <div class="col-2" id="discount-tag">
+            <p >save 82%</p>
+        </div>
     </div>
     <div class="row">
         <div class="col-6">
-            <div class="container d-flex flex-column" id="offer-wrapper">
-                <div class="row" id="offer_title">
-                    <div class="col-12">
-                        new year's offer
+            <div class="container" id="offer-wrapper">
+                <div class="row">
+                    <div class="col-12 offer" id="offer-title">
+                        <p>new year's offer</p>
                     </div>
                 </div>
-                <div class="row" id="offer_discount">
-                    <div class="col-12">
-                        <span id="red-text">82% OFF</span> web hosting
+                <div class="row">
+                    <div class="col-12 offer" id="offer-discount">
+                        <p id="red-text">82% OFF</p>
+                        <p>web hosting</p>
                     </div>
                 </div>
-                <div class="row" id="offer_countdown">
-                    <div class="col-12">
-                        <div class="row d-flex justify-content-start align-items-center">
+                <div class="row">
+                    <div class="col-12 offer">
+                        <div class="row" id="offer-countdown">
                             <div class="col-1">
                                 <div id="triangle-right"></div>
                             </div>
-                            <div class="col-9 mx-auto" id="time-block">
-                                <div class="row d-flex justify-content-center align-items-center mx-auto" id="time-block__time">
-                                    <count-down [text]="text" units="Days | Hours | Minutes | Seconds" end="March 22, 2019"></count-down>
-                                </div>
+                            <div class="col-7" id="time-block">
+                                <count-down units="Days | Hours | Minutes | Seconds" end="March 22, 2019"></count-down>
                             </div>
                             <div class="col-1">
                                 <div id="triangle-left"></div>
@@ -33,19 +34,27 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-12">
-                        <button class="btn btn-danger" id="offer_button">get started now</button>
+                    <div class="col-12 offer">
+                        <button class="btn btn-danger" id="offer-button">get started now</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="col-6">
-            <div class="container d-flex flex-row" id="price_wrapper">
-                <div class="col-4 mx-auto" id="price_currency">$</div>
-                <div class="col-4 mx-auto" id="price_unit__big">1</div>
-                <div class="col-4" id="price_unit__small">
-                    <div class="row" id="price_unit__cents">45</div>
-                    <div class="row" id="price_unit__month">/mo</div>    
+            <div class="container d-flex" id="price_wrapper">
+                <div class="col-2 d-flex justify-content-start align-items-start">
+                <p id="price_currency">$</p>
+                </div>
+                <div class="col-5 d-flex justify-content-center align-self-start" id="price_unit__big-wrapper">
+                    <p class="mt-0 pt-0 h-100" id="price_unit__big">1</p>
+                </div>
+                <div class="col-5" id="price_unit__small">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <p id="price_unit__cents">45</p>
+                    </div>
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <p id="price_unit__month">/mo</p>
+                    </div>    
                 </div>
             </div>
         </div>

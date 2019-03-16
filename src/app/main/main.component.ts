@@ -6,13 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-  text: any = {
-    'Weeks': '',
-    'Days': ``, '': ``,
-    'Minutes': ``, 'Seconds': ``,
-    'MilliSeconds': 'MilliSeconds'
-  };
-
   constructor() { }
 
   ngOnInit() {

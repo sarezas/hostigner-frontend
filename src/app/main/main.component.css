@@ -1,17 +1,32 @@
 #main-wrapper {
   margin-top: 15%;
-  margin-bottom: 15%;
   text-transform: capitalize;
   font-family: 'Open Sans', sans-serif;
 }
 
-#main-wrapper #discount-tag {
-  height: 45px;
-  position: relative;
-  background: #eb6b78;
+#main-wrapper #discount-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-#main-wrapper #discount-tag:after {
+#main-wrapper #discount-wrapper #discount-tag {
+  text-transform: uppercase;
+  height: 45px;
+  margin-left: 500px;
+  background: #eb6b78;
+  justify-items: center;
+  text-align: center;
+}
+
+#main-wrapper #discount-wrapper #discount-tag p {
+  padding: 10px;
+}
+
+#main-wrapper #discount-wrapper #discount-tag:after {
   top: 100%;
   left: 50%;
   border: solid transparent;
@@ -31,11 +46,55 @@
   font-weight: 600;
 }
 
-#main-wrapper #offer-wrapper #red-text {
+#main-wrapper #offer-wrapper .offer {
+  margin: 10px;
+}
+
+#main-wrapper #offer-wrapper #offer-discount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#main-wrapper #offer-wrapper #offer-discount #red-text {
+  margin-right: 10px;
   color: #dc3848;
 }
 
-#main-wrapper #offer-wrapper #offer_button {
+#main-wrapper #offer-wrapper #offer-countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-wrapper #offer-wrapper #offer-countdown #time-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+#main-wrapper #offer-wrapper #offer-button {
   font-weight: 600;
   text-transform: uppercase;
   padding: 10px 40px;
@@ -68,17 +127,16 @@
 }
 
 #main-wrapper #price_wrapper #price_currency {
-  font-size: 150px;
+  font-size: 80px;
   height: auto;
 }
 
-#main-wrapper #price_wrapper #price_unit__big {
-  font-size: 320px;
-  height: auto;
+#main-wrapper #price_wrapper #price_unit__big-wrapper #price_unit__big {
+  font-size: 300px;
 }
 
 #main-wrapper #price_wrapper #price_unit__small {
-  font-size: 150px;
+  font-size: 80px;
   height: auto;
 }
 

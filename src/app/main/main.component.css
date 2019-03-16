@@ -1,5 +1,6 @@
 #main-wrapper {
   margin-top: 15%;
+  margin-bottom: 160px;
   text-transform: capitalize;
   font-family: 'Open Sans', sans-serif;
 }
@@ -126,21 +127,68 @@
   text-transform: uppercase;
 }
 
-#main-wrapper #price_wrapper #price-currency {
+#main-wrapper #price-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#main-wrapper #price-wrapper #price-currency {
+  font-size: 100px;
+  height: auto;
+  margin-top: 50px;
+}
+
+#main-wrapper #price-wrapper #price-unit__big-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-height: 400px;
+}
+
+#main-wrapper #price-wrapper #price-unit__big-wrapper #price-unit__big {
+  display: inline-block;
+  position: relative;
+  top: -80px;
+  max-height: 400px;
+  padding: 10px 10px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 400px;
+  font-weight: 600;
+}
+
+#main-wrapper #price-wrapper #price-unit__small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   font-size: 80px;
   height: auto;
+  margin-top: 30px;
 }
 
-#main-wrapper #price_wrapper #price-unit__big-wrapper #price-unit__big {
-  font-size: 300px;
-}
-
-#main-wrapper #price_wrapper #price-unit__small {
-  font-size: 80px;
-  height: auto;
-}
-
-#main-wrapper #price_wrapper #price-unit__month {
+#main-wrapper #price-wrapper #price-unit__small #price-unit__month {
   text-transform: none;
+  font-weight: 450;
 }
 /*# sourceMappingURL=main.component.css.map */

@@ -1,11 +1,9 @@
 #footer-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-top: 120px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+  text-transform: capitalize;
 }
 
 #footer-wrapper .text-wrapper {
@@ -16,16 +14,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: capitalize;
 }
 
 #footer-wrapper .text-wrapper #checkmark {
@@ -42,5 +33,10 @@
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
+}
+
+#footer-wrapper .text-wrapper .footer-text {
+  display: inline-block;
+  white-space: nowrap;
 }
 /*# sourceMappingURL=footer.component.css.map */

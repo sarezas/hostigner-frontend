@@ -67,11 +67,9 @@ $desktop: 1440px;
 
 #main-wrapper {
     margin-top: 15%;
-    // margin-bottom: 15%;
+    margin-bottom: 160px;
     text-transform: capitalize;
     font-family: 'Open Sans', sans-serif;
-    // line-height: 21px;
-    // font-size: 14px;
 
     #discount-wrapper {
         display: flex;
@@ -172,27 +170,49 @@ $desktop: 1440px;
     
     }
 
-    #price_wrapper {
+    #price-wrapper {
+        display: flex;
+        flex-direction: row;
+
         #price-currency {
-            font-size: 80px;
+            // d-flex justify-content-start align-items-start
+            font-size: 100px;
             height: auto;
+            margin-top: 50px;
         }
 
         #price-unit__big-wrapper {
-            // justify-content: start;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            max-height: 400px;
 
             #price-unit__big {
-                font-size: 300px;
+                display: inline-block;
+                position: relative;
+                top: -80px;
+                max-height: 400px;
+                padding: 10px 10px;
+                text-align: center;
+                margin: 0 auto;
+                font-size: 400px;
+                font-weight: 600;
             }
         }
 
         #price-unit__small {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
             font-size: 80px;
             height: auto;
-        }
+            margin-top: 30px;
 
-        #price-unit__month {
-            text-transform: none;
+            #price-unit__month {
+                text-transform: none;
+                font-weight: 450;
+            }
         }
     }
 }

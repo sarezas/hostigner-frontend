@@ -1,5 +1,5 @@
 #main-wrapper {
-  margin-top: 15%;
+  margin-top: 17.5rem;
   margin-bottom: 19vh;
   text-transform: capitalize;
   font-family: 'Open Sans', sans-serif;
@@ -18,12 +18,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.6vh;
   font-weight: bold;
 }
 
 #main-wrapper #discount-wrapper #discount-tag {
   position: relative;
+  font-size: .8rem;
+  min-width: 10px;
+  padding: 5px;
   top: -30px;
   text-transform: uppercase;
   height: 45px;
@@ -71,7 +73,7 @@
 @media (max-width: 414px) {
   #main-wrapper #discount-wrapper {
     position: absolute;
-    top: 570px;
+    top: 580px;
     left: -310px;
   }
 }
@@ -79,7 +81,7 @@
 @media (max-width: 411px) {
   #main-wrapper #discount-wrapper {
     position: absolute;
-    top: 570px;
+    top: 580px;
     left: -310px;
   }
 }
@@ -87,15 +89,15 @@
 @media (max-width: 375px) {
   #main-wrapper #discount-wrapper {
     position: absolute;
-    top: 550px;
-    left: -320px;
+    top: 560px;
+    left: -330px;
   }
 }
 
 @media (max-width: 320px) {
   #main-wrapper #discount-wrapper {
     position: absolute;
-    top: 520px;
+    top: 530px;
     left: -345px;
   }
 }
@@ -245,12 +247,36 @@
 @media (max-width: 414px) {
   #main-wrapper #offer-wrapper {
     margin-top: 80px;
+    margin-left: 30px;
+  }
+  #main-wrapper #offer-wrapper #offer-title {
+    margin-left: 45px;
+    max-width: 250px;
+  }
+  #main-wrapper #offer-wrapper #offer-discount {
+    margin-left: 50px;
+    max-width: 250px;
+  }
+  #main-wrapper #offer-wrapper #offer-button {
+    margin-left: 35px;
   }
 }
 
 @media (max-width: 411px) {
   #main-wrapper #offer-wrapper {
     margin-top: 80px;
+    margin-left: 30px;
+  }
+  #main-wrapper #offer-wrapper #offer-title {
+    margin-left: 45px;
+    max-width: 250px;
+  }
+  #main-wrapper #offer-wrapper #offer-discount {
+    margin-left: 50px;
+    max-width: 250px;
+  }
+  #main-wrapper #offer-wrapper #offer-button {
+    margin-left: 35px;
   }
 }
 
@@ -259,11 +285,16 @@
     margin-top: 100px;
     margin-left: 20px;
   }
-  #main-wrapper #offer-wrapper #offer-title, #main-wrapper #offer-wrapper #offer-discount {
-    margin-left: 23px;
+  #main-wrapper #offer-wrapper #offer-title {
+    margin-left: 35px;
+    max-width: 250px;
+  }
+  #main-wrapper #offer-wrapper #offer-discount {
+    margin-left: 40px;
+    max-width: 250px;
   }
   #main-wrapper #offer-wrapper #offer-button {
-    margin-left: 8px;
+    margin-left: 25px;
   }
 }
 
@@ -271,11 +302,16 @@
   #main-wrapper #offer-wrapper {
     margin-left: 10px;
   }
-  #main-wrapper #offer-wrapper #offer-title, #main-wrapper #offer-wrapper #offer-discount {
-    margin-left: 10px;
+  #main-wrapper #offer-wrapper #offer-title {
+    margin-left: 20px;
+    max-width: 250px;
+  }
+  #main-wrapper #offer-wrapper #offer-discount {
+    margin-left: 25px;
+    max-width: 250px;
   }
   #main-wrapper #offer-wrapper #offer-button {
-    margin-left: -5px;
+    margin-left: 10px;
   }
 }
 

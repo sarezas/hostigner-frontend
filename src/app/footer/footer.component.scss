@@ -4,9 +4,11 @@ $padding: 10px;
 $mobile-s: 320px;
 $galaxy-s5: 360px;
 $mobile-m: 375px;
-$mobile-l: 420px;
-$tablet: 768px;
-$ipad-pro: 995px;
+$pixel-2: 411px;
+$iphone-6-plus: 414px;
+$mobile-l: 435px;
+$tablet-s: 769px;
+$tablet-l: 992px;
 $laptop-s: 1024px;
 $laptop-m: 1220px;
 $desktop: 1440px;
@@ -29,20 +31,32 @@ $desktop: 1440px;
     }
 }
 
+@mixin pixel-2 {
+    @media (max-width: #{$pixel-2}) {
+        @content;
+    }
+}
+
+@mixin iphone-6-plus {
+    @media (max-width: #{$iphone-6-plus}) {
+        @content;
+    }
+}
+
 @mixin mobile-l {
     @media (max-width: #{$mobile-l}) {
         @content;
     }
 }  
 
-@mixin tablet {
-    @media (max-width: #{$tablet}) {
+@mixin tablet-s {
+    @media (max-width: #{$tablet-s}) {
         @content;
     }
 } 
 
-@mixin ipad-pro {
-    @media (max-width: #{$ipad-pro}) {
+@mixin tablet-l {
+    @media (max-width: #{$tablet-l}) {
         @content;
     }
 }
@@ -94,6 +108,38 @@ $desktop: 1440px;
             display: inline-block;
             white-space: nowrap;
         }  
+
+        @include laptop-m {
+            font-size: 12px;
+        }
+
+        @include tablet-l {
+            font-size: 11px;
+        }
+
+        @include tablet-s {
+            font-size: 8px;
+        }
+
+        @include mobile-l {
+            font-size: 8px;
+            margin-left: 80px;
+        }
+
+        @include mobile-m {
+            font-size: 8px;
+            margin-left: 60px;
+        }
+
+        @include galaxy-s5 {
+            font-size: 8px;
+            margin-left: 60px;
+        }
+
+        @include mobile-s {
+            font-size: 6px;
+            margin-left: 50px;
+        }
     }
     
 }

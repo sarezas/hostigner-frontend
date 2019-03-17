@@ -4,9 +4,9 @@ $padding: 10px;
 $mobile-s: 320px;
 $galaxy-s5: 360px;
 $mobile-m: 375px;
-$mobile-l: 420px;
-$tablet: 768px;
-$ipad-pro: 995px;
+$mobile-l: 435px;
+$tablet-s: 768px;
+$tablet-l: 992px;
 $laptop-s: 1024px;
 $laptop-m: 1220px;
 $desktop: 1440px;
@@ -35,14 +35,14 @@ $desktop: 1440px;
     }
 }  
 
-@mixin tablet {
-    @media (max-width: #{$tablet}) {
+@mixin tablet-s {
+    @media (max-width: #{$tablet-s}) {
         @content;
     }
 } 
 
-@mixin ipad-pro {
-    @media (max-width: #{$ipad-pro}) {
+@mixin tablet-l {
+    @media (max-width: #{$tablet-l}) {
         @content;
     }
 }
@@ -67,7 +67,7 @@ $desktop: 1440px;
 
 #header-wrapper {
     #nav-wrapper {
-        @include tablet {
+        @include tablet-l {
             background-color: rgb(105, 59, 165);
             width: 100vw;
             position: absolute;
@@ -90,7 +90,7 @@ $desktop: 1440px;
                 }
             }
 
-            @include tablet {
+            @include tablet-l {
                 margin-top: 0;
                 margin-left: 2 * $margin;
                 margin-bottom: 2 * $margin;
@@ -141,7 +141,7 @@ $desktop: 1440px;
                                 font-weight: 400;
                             }
 
-                            @include ipad-pro {
+                            @include tablet-l {
                                 font-size: 7px;
                                 font-weight: 300;
                             }
@@ -157,13 +157,18 @@ $desktop: 1440px;
                             font-weight: 400;
                         }
 
-                        @include ipad-pro {
+                        @include tablet-l {
                             font-size: 12px;
                             font-weight: 200;
-                            margin: 0;
-                            padding: 0;
+                            // margin: 0;
+                            // padding: 0;
                         }
                     }
+                }
+
+                @include tablet-s {
+                    display: flex;
+                    flex-direction: column;
                 }
 
                 @include mobile-l {

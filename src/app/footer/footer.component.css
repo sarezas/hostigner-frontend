@@ -39,4 +39,50 @@
   display: inline-block;
   white-space: nowrap;
 }
+
+@media (max-width: 1220px) {
+  #footer-wrapper .text-wrapper {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  #footer-wrapper .text-wrapper {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 769px) {
+  #footer-wrapper .text-wrapper {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 435px) {
+  #footer-wrapper .text-wrapper {
+    font-size: 8px;
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 375px) {
+  #footer-wrapper .text-wrapper {
+    font-size: 8px;
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 360px) {
+  #footer-wrapper .text-wrapper {
+    font-size: 8px;
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  #footer-wrapper .text-wrapper {
+    font-size: 6px;
+    margin-left: 50px;
+  }
+}
 /*# sourceMappingURL=footer.component.css.map */

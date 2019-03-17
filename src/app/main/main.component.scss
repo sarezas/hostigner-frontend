@@ -4,8 +4,10 @@ $padding: 10px;
 $mobile-s: 320px;
 $galaxy-s5: 360px;
 $mobile-m: 375px;
+$pixel-2: 411px;
+$iphone-6-plus: 414px;
 $mobile-l: 435px;
-$tablet-s: 768px;
+$tablet-s: 769px;
 $tablet-l: 992px;
 $laptop-s: 1024px;
 $laptop-m: 1220px;
@@ -25,6 +27,18 @@ $desktop: 1440px;
 
 @mixin mobile-m {
     @media (max-width: #{$mobile-m}) {
+        @content;
+    }
+}
+
+@mixin pixel-2 {
+    @media (max-width: #{$pixel-2}) {
+        @content;
+    }
+}
+
+@mixin iphone-6-plus {
+    @media (max-width: #{$iphone-6-plus}) {
         @content;
     }
 }
@@ -71,6 +85,14 @@ $desktop: 1440px;
     text-transform: capitalize;
     font-family: 'Open Sans', sans-serif;
 
+    @include tablet-l {
+        margin-top: 35%;
+    }
+
+    // @include tablet-s {
+    //     margin-top: 15%;
+    // }
+
     #discount-wrapper {
         display: flex;
         justify-content: center;
@@ -109,7 +131,9 @@ $desktop: 1440px;
         }
 
         @include tablet-l {
-            margin-left: -200px;
+            position: absolute;
+            top: 570px !important;
+            margin-left: -250px;
         }
 
         @include tablet-s {
@@ -124,8 +148,42 @@ $desktop: 1440px;
         }
 
         @include mobile-l {
-            top: 490px;
-            left: -50px;
+            position: absolute;
+            top: 550px !important;
+            left: 100px !important;
+
+            #discount-tag {
+                height: 35px;
+                padding: .2 * $padding;
+            }
+        }
+
+        @include iphone-6-plus {
+            position: absolute;
+            top: 550px !important;
+            left: -65px !important;
+        }
+
+        @include pixel-2 {
+            top: 470px;
+            left: -120px;
+        }
+
+        @include galaxy-s5 {
+            position: absolute;
+            top: 530px !important;
+            left: -90px !important;
+        }
+
+        @include mobile-m {
+            position: absolute;
+            top: 550px !important;
+            left: -75px !important;
+        }
+
+        @include mobile-s {
+            top: 510px !important;
+            left: -100px;
         }
     }
 
@@ -242,6 +300,51 @@ $desktop: 1440px;
                 margin: 0 20px
             }
         }
+
+        @include mobile-l {
+            margin-left: 40px;
+
+            #offer-title, #offer-discount {
+                margin-left: 30px;
+            }
+
+            #offer-button {
+                margin-left: 15px;
+            }
+        }
+
+        @include iphone-6-plus {
+            margin-top: 80px;
+        }
+
+        @include pixel-2 {
+            margin-top: 80px;
+        }
+
+        @include mobile-m {
+            margin-top: 100px;
+            margin-left: 20px;
+
+            #offer-title, #offer-discount {
+                margin-left: 23px;
+            }
+
+            #offer-button {
+                margin-left: 8px;
+            } 
+        }
+
+        @include mobile-s {
+            margin-left: 10px;
+
+            #offer-title, #offer-discount {
+                margin-left: 10px;
+            }
+
+            #offer-button {
+                margin-left: -5px;
+            } 
+        }
     }
 
     #price-wrapper {
@@ -331,7 +434,36 @@ $desktop: 1440px;
                 font-size: 40px;
             }
             #price-unit__month {
-                font-size: 20px;
+                font-size: 30px !important;
+            }
+        }
+
+        @include mobile-l {
+            margin-left: 30px;
+
+            #price-unit__small {
+                font-size: 40px;
+            }
+            #price-unit__month {
+                font-size: 30px !important;
+            }
+        }
+
+        @include mobile-m {
+            margin-left: 30px;
+
+            #price-unit__small {
+                font-size: 40px;
+            }
+            #price-unit__month {
+                font-size: 30px !important;
+            }
+        }
+
+        @include mobile-s {
+            #price-currency {
+                margin-left: -20px;
+                font-size: 60px;
             }
         }
     }

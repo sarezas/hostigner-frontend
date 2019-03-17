@@ -5,8 +5,8 @@ $mobile-s: 320px;
 $galaxy-s5: 360px;
 $mobile-m: 375px;
 $mobile-l: 420px;
-$tablet: 768px;
-$ipad-pro: 995px;
+$tablet-s: 768px;
+$tablet-l: 992px;
 $laptop-s: 1024px;
 $laptop-m: 1220px;
 $desktop: 1440px;
@@ -35,14 +35,14 @@ $desktop: 1440px;
     }
 }  
 
-@mixin tablet {
+@mixin tablet-s {
     @media (max-width: #{$tablet}) {
         @content;
     }
 } 
 
-@mixin ipad-pro {
-    @media (max-width: #{$ipad-pro}) {
+@mixin tablet-l {
+    @media (max-width: #{$tablet-l}) {
         @content;
     }
 }
@@ -109,10 +109,6 @@ $desktop: 1440px;
         font-size: 38px;
         font-weight: 900;
 
-        // .offer {
-            // margin: 0 $margin;
-        // }
-
         #offer-title {
             margin: 0 $margin;
             padding: 0;
@@ -166,14 +162,41 @@ $desktop: 1440px;
             border-bottom: 10px solid transparent;
         }
 
-        #time-block__time {
-            max-width: 280px;
-            height: auto;
-        }
-
         count-down {
             font-size: 12px;
             text-transform: uppercase;
+        }
+
+        @include laptop-m {
+            #offer-title, #offer-discount {
+                font-size: 32px;
+            }
+
+            #offer-countdown {
+                max-width: 420px;
+            }
+        }
+
+        @include tablet-l {
+            #offer-title, #offer-discount {
+                font-size: 24px;
+            }
+
+            #offer-countdown {
+                max-width: 320px;
+            }
+
+            #triangle-right {
+                display: none;
+            }
+        
+            #triangle-left {
+                display: none;
+            }
+
+            #offer-button {
+                font-size: 10px;
+            }
         }
     }
 
@@ -219,6 +242,36 @@ $desktop: 1440px;
                 text-transform: none;
                 font-weight: 500;
                 font-size: 70px;
+            }
+        }
+
+        @include laptop-m {
+            #price-currency {
+                font-size: 100px;
+            }
+            #price-unit__big {
+                font-size: 330px !important;
+            }
+            #price-unit__small {
+                font-size: 70px;
+            }
+            #price-unit__month {
+                font-size: 50px;
+            }
+        }
+
+        @include tablet-l {
+            #price-currency {
+                font-size: 80px;
+            }
+            #price-unit__big {
+                font-size: 310px !important;
+            }
+            #price-unit__small {
+                font-size: 50px;
+            }
+            #price-unit__month {
+                font-size: 30px;
             }
         }
     }

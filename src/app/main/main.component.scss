@@ -4,7 +4,7 @@ $padding: 10px;
 $mobile-s: 320px;
 $galaxy-s5: 360px;
 $mobile-m: 375px;
-$mobile-l: 420px;
+$mobile-l: 435px;
 $tablet-s: 768px;
 $tablet-l: 992px;
 $laptop-s: 1024px;
@@ -36,7 +36,7 @@ $desktop: 1440px;
 }  
 
 @mixin tablet-s {
-    @media (max-width: #{$tablet}) {
+    @media (max-width: #{$tablet-s}) {
         @content;
     }
 } 
@@ -103,11 +103,36 @@ $desktop: 1440px;
             border-width: 20px;
             margin-left: -20px;
         }
+
+        @include laptop-m {
+            margin-left: -100px;
+        }
+
+        @include tablet-l {
+            margin-left: -200px;
+        }
+
+        @include tablet-s {
+            position: absolute;
+            top: 490px;
+            left: 100px;
+            
+            #discount-tag {
+                font-size: 10px;
+                padding: .5 * $padding;
+            }
+        }
+
+        @include mobile-l {
+            top: 490px;
+            left: -50px;
+        }
     }
 
     #offer-wrapper {
         font-size: 38px;
         font-weight: 900;
+        margin-bottom: 5vh;
 
         #offer-title {
             margin: 0 $margin;
@@ -198,11 +223,31 @@ $desktop: 1440px;
                 font-size: 10px;
             }
         }
+
+        @include tablet-s {
+            margin-top: 5vh;
+            margin-bottom: 20vh;
+
+            #offer-title {
+                min-width: 240px;
+            }
+
+            #offer-discount {
+                font-size: 16px;
+                min-width: 240px;
+            }
+
+            #offer-countdown {
+                max-width: 240px;
+                margin: 0 20px
+            }
+        }
     }
 
     #price-wrapper {
         display: flex;
         flex-direction: row;
+        margin-bottom: 5vh;
 
         #price-currency {
             font-size: 120px;
@@ -272,6 +317,21 @@ $desktop: 1440px;
             }
             #price-unit__month {
                 font-size: 30px;
+            }
+        }
+
+        @include tablet-s {
+            #price-currency {
+                font-size: 70px;
+            }
+            #price-unit__big {
+                font-size: 300px !important;
+            }
+            #price-unit__small {
+                font-size: 40px;
+            }
+            #price-unit__month {
+                font-size: 20px;
             }
         }
     }

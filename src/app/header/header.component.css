@@ -115,7 +115,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 435px) {
   #header-wrapper #nav-wrapper #navbar-menu__wrapper #navbar-menu__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -127,7 +127,7 @@
   }
 }
 
-@media (max-width: 435px) {
+@media (max-width: 767px) {
   #header-wrapper #nav-wrapper #navbar-menu__wrapper #navbar-menu__list {
     display: -webkit-box;
     display: -ms-flexbox;

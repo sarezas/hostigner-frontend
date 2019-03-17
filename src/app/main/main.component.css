@@ -18,6 +18,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: 1.6vh;
+  font-weight: bold;
 }
 
 #main-wrapper #discount-wrapper #discount-tag {
@@ -50,86 +52,58 @@
   margin-left: -20px;
 }
 
-@media (max-width: 1220px) {
-  #main-wrapper #discount-wrapper {
-    margin-left: -100px;
-  }
-}
-
 @media (max-width: 992px) {
   #main-wrapper #discount-wrapper {
     position: absolute;
-    top: 570px !important;
-    margin-left: -250px;
+    top: 190px;
+    left: 15px;
   }
 }
 
 @media (max-width: 769px) {
   #main-wrapper #discount-wrapper {
     position: absolute;
-    top: 490px;
-    left: 100px;
-  }
-  #main-wrapper #discount-wrapper #discount-tag {
-    font-size: 10px;
-    padding: 5px;
-  }
-}
-
-@media (max-width: 435px) {
-  #main-wrapper #discount-wrapper {
-    position: absolute;
-    top: 550px !important;
-    left: 100px !important;
-  }
-  #main-wrapper #discount-wrapper #discount-tag {
-    height: 35px;
-    padding: 2px;
+    top: 190px;
+    left: 15px;
   }
 }
 
 @media (max-width: 414px) {
   #main-wrapper #discount-wrapper {
     position: absolute;
-    top: 550px !important;
-    left: -65px !important;
+    top: 570px;
+    left: -310px;
   }
 }
 
 @media (max-width: 411px) {
   #main-wrapper #discount-wrapper {
-    top: 470px;
-    left: -120px;
-  }
-}
-
-@media (max-width: 360px) {
-  #main-wrapper #discount-wrapper {
     position: absolute;
-    top: 530px !important;
-    left: -90px !important;
+    top: 570px;
+    left: -310px;
   }
 }
 
 @media (max-width: 375px) {
   #main-wrapper #discount-wrapper {
     position: absolute;
-    top: 550px !important;
-    left: -75px !important;
+    top: 550px;
+    left: -320px;
   }
 }
 
 @media (max-width: 320px) {
   #main-wrapper #discount-wrapper {
-    top: 510px !important;
-    left: -100px;
+    position: absolute;
+    top: 520px;
+    left: -345px;
   }
 }
 
 #main-wrapper #offer-wrapper {
   font-size: 38px;
   font-weight: 900;
-  margin-bottom: 5vh;
+  margin-bottom: 15vh;
 }
 
 #main-wrapper #offer-wrapper #offer-title {
@@ -258,6 +232,7 @@
 @media (max-width: 435px) {
   #main-wrapper #offer-wrapper {
     margin-left: 40px;
+    margin-bottom: 25vh;
   }
   #main-wrapper #offer-wrapper #offer-title, #main-wrapper #offer-wrapper #offer-discount {
     margin-left: 30px;

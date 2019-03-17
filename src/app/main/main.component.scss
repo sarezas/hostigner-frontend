@@ -89,13 +89,11 @@ $desktop: 1440px;
         margin-top: 35%;
     }
 
-    // @include tablet-s {
-    //     margin-top: 15%;
-    // }
-
     #discount-wrapper {
         display: flex;
         justify-content: center;
+        font-size: 1.6vh;
+        font-weight: bold;
 
         #discount-tag {
             position: relative;
@@ -110,6 +108,7 @@ $desktop: 1440px;
             p {
                 padding: $padding;
             }
+
         }
         #discount-tag:after {
             top: 100%;
@@ -124,73 +123,51 @@ $desktop: 1440px;
             border-top-color: hsl(354, 88%, 73%);
             border-width: 20px;
             margin-left: -20px;
-        }
 
-        @include laptop-m {
-            margin-left: -100px;
         }
 
         @include tablet-l {
             position: absolute;
-            top: 570px !important;
-            margin-left: -250px;
+            top: 190px;
+            left: 15px;
         }
 
         @include tablet-s {
             position: absolute;
-            top: 490px;
-            left: 100px;
-            
-            #discount-tag {
-                font-size: 10px;
-                padding: .5 * $padding;
-            }
-        }
-
-        @include mobile-l {
-            position: absolute;
-            top: 550px !important;
-            left: 100px !important;
-
-            #discount-tag {
-                height: 35px;
-                padding: .2 * $padding;
-            }
+            top: 190px;
+            left: 15px;
+            // font-size: 12px;
         }
 
         @include iphone-6-plus {
             position: absolute;
-            top: 550px !important;
-            left: -65px !important;
+            top: 570px;
+            left: -310px;
         }
 
         @include pixel-2 {
-            top: 470px;
-            left: -120px;
-        }
-
-        @include galaxy-s5 {
             position: absolute;
-            top: 530px !important;
-            left: -90px !important;
+            top: 570px;
+            left: -310px;
         }
 
         @include mobile-m {
             position: absolute;
-            top: 550px !important;
-            left: -75px !important;
+            top: 550px;
+            left: -320px;
         }
 
-        @include mobile-s {
-            top: 510px !important;
-            left: -100px;
+         @include mobile-s {
+            position: absolute;
+            top: 520px;
+            left: -345px;
         }
     }
 
     #offer-wrapper {
         font-size: 38px;
         font-weight: 900;
-        margin-bottom: 5vh;
+        margin-bottom: 15vh;
 
         #offer-title {
             margin: 0 $margin;
@@ -303,6 +280,7 @@ $desktop: 1440px;
 
         @include mobile-l {
             margin-left: 40px;
+            margin-bottom: 25vh;
 
             #offer-title, #offer-discount {
                 margin-left: 30px;
